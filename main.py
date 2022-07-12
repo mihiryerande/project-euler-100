@@ -16,9 +16,10 @@
 #       determine the number of blue discs that the box would contain.
 
 from math import sqrt
+from typing import Tuple
 
 
-def main(n_min):
+def main(n_min: int) -> Tuple[int, int]:
     """
     Returns the red/blue disc arrangement (as counts of red+blue and blue-only)
       in the first arrangement having more than `n_min` total discs,
@@ -28,7 +29,7 @@ def main(n_min):
         n_min (int): Natural number
 
     Returns:
-        (int, int):
+        (Tuple[int, int]):
             Tuple of ...
               * Total disc count of arrangement (red+blue)
               * Blue disc count
